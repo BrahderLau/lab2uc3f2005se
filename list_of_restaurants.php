@@ -19,6 +19,11 @@
           <th>Menara Standard Chartered, TPM</th>
           <th>03-22441234</th>
         </tr>
+        <?php
+          $connectionInfo = array("UID" => "apuadmin", "pwd" => "lab2exercise@", "Database" => "apulab2exercise", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+          $serverName = "tcp:lab2exercisetp045515.database.windows.net,1433";
+          $conn = sqlsrv_connect($serverName, $connectionInfo);
+        ?>
       </table>
     </center>
   </body>
